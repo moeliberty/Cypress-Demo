@@ -1,0 +1,11 @@
+{
+  "name": "cypress-test-suite",
+  "version": "1.0.0",
+  "license": "UNLICENSED",
+  "private": true,
+  "dependencies": {
+  },
+  "devDependencies": {
+    "cypress": "^9.5.3"
+  }
+}

@@ -1,0 +1,12 @@
+version: '3.2'
+
+services:
+  cypress:
+    image: cypress
+    build: .
+    container_name: cypress
+    working_dir: /home/appuser/app
+    user: appuser
+    volumes:
+      - ./cypress:/home/appuser/app/cypress
+      - ./cypress.json:/home/appuser/app/cypress.json
