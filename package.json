@@ -6,6 +6,7 @@
   "dependencies": {
   },
   "devDependencies": {
-    "cypress": "^9.5.3"
+    "cypress": "^9.5.3",
+    "redis": "^4.0.6"
   }
 }

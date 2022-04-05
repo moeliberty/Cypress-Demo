@@ -7,11 +7,15 @@
 
 describe("Buy on Redpill", () => {
     beforeEach(() => {
-        cy.visit('https://example.cypress.io/todo')
+        cy.visit('http://241.redpill.localhost/fr/')
     })
 
     it("adds a single todo", () => {
-        cy.get(".new-todo").type("Buy Milk{enter}")
-        cy.get(".todo-list li").should("have.length", 3)
+        cy.task('redis')
+        // cy.get(".todo-list li").should("have.length", 3)
+        // cy.visit()
+        // cy.exec('yarn run redis', { failOnNonZeroExit: false }).then((result) => {
+        //     cy.log(result)
+        // })
     })
 })
