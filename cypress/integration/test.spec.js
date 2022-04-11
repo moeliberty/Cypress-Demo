@@ -5,17 +5,15 @@
 // check out the link below and learn how to write your first test:
 // https://on.cypress.io/writing-first-test
 
-describe("Buy on Redpill", () => {
+describe('Test TODO App', () => {
     beforeEach(() => {
-        cy.visit('http://241.redpill.localhost/fr/')
-    })
+        // cy.visit('http://241.redpill.localhost/fr/')
+        cy.visit('https://example.cypress.io/todo');
+    });
 
-    it("adds a single todo", () => {
-        cy.task('redis')
-        // cy.get(".todo-list li").should("have.length", 3)
-        // cy.visit()
-        // cy.exec('yarn run redis', { failOnNonZeroExit: false }).then((result) => {
-        //     cy.log(result)
-        // })
-    })
-})
+    it('adds a single todo', () => {
+        // cy.task('redis')
+        cy.get('.new-todo').type('Buy Milk{enter}');
+        cy.get('.todo-list li').should('have.length', 3);
+    });
+});

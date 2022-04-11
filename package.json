@@ -3,10 +3,14 @@
   "version": "1.0.0",
   "license": "UNLICENSED",
   "private": true,
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "cypress": "^9.5.3",
+    "cypress-cucumber-preprocessor": "^4.3.1",
+    "prettier": "2.6.2",
     "redis": "^4.0.6"
+  },
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": true
   }
 }
