@@ -5,7 +5,7 @@
 // check out the link below and learn how to write your first test:
 // https://on.cypress.io/writing-first-test
 
-describe('Test TODO App', () => {
+describe('React TodoMVC', () => {
     beforeEach(() => {
         // cy.visit('http://241.redpill.localhost/fr/')
         cy.visit('https://example.cypress.io/todo');

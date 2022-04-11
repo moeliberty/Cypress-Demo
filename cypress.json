@@ -1,4 +1,4 @@
 {
-    "supportFile": false,
-    "testFiles": "**/*.feature"
+    "testFiles": "**/*.feature",
+    "hideXHR": true
 }
